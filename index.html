@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ToDo List</title>
+    </head>
+    <body>
+        <div class="todoContainer">
+            <div class="todoapp">
+                <h1>ToDo List</h1>
+                <div class="searchRow">
+                    <input type="text" id="search" placeholder="Szukaj zadania"/>
+                </div>
+                <div class="row">
+                    <input type="text" id="task" placeholder="Dodaj zadanie"/>
+                    <input type="date" id="selectDate"/>
+                    <button onclick="addTask()">Dodaj</button>
+                </div>
+                <ul id="taskList">
+
+                </ul>
+                <div class="endRow">
+                    <button onclick="deleteTask()" id="deleteButton">Usuń</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

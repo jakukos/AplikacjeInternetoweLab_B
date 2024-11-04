@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.todoContainer{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, #2F3F9E, #1F8C52);
+    padding: 10px;
+}
+
+.todoapp{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todoapp h1{
+    color: #002675;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    background: #edeef0;
+}
+
+.searchRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    background: #edeef0;
+}
+.highlight {
+    color: red;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #2c302f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+button:hover{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #3b3e3d;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.editButton {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url("icons/edit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px; /* Adjust the height as needed */
+    width: 20px;  /* Adjust the width as needed */
+    margin-left: 10px; /* Add some margin to separate from the text */
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.editButton:hover {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url("icons/edit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 20px; /* Adjust the height as needed */
+    width: 20px;  /* Adjust the width as needed */
+    margin-left: 10px; /* Add some margin to separate from the text */
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("icons/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: #ff5945;
+}
+
+ul li.checked::before{
+    background-image: url("icons/checked.png");
+}
